@@ -63,8 +63,8 @@ public class NumbersTest {
     @Test
     public void 스트라이크는_위치와_숫자가_모두_일치하는_수의_개수다() {
         // given
-        Numbers answer = new Numbers(List.of(1,2,3));
-        Numbers prediction = new Numbers(List.of(1,2,4));
+        Numbers answer = new Numbers(List.of(1, 2, 3));
+        Numbers prediction = new Numbers(List.of(1, 2, 4));
 
         // when
         int count = answer.countStrike(prediction);
@@ -76,8 +76,8 @@ public class NumbersTest {
     @Test
     public void 볼은_위치가_다르고_숫자가_일치하는_수의_개수다() {
         // given
-        Numbers answer = new Numbers(List.of(1,2,3));
-        Numbers prediction = new Numbers(List.of(1,3,2));
+        Numbers answer = new Numbers(List.of(1, 2, 3));
+        Numbers prediction = new Numbers(List.of(1, 3, 2));
 
         // when
         int count = answer.countBall(prediction);
